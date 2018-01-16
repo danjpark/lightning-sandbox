@@ -1,0 +1,17 @@
+{
+    "projectName": "Lightning-Sandbox",
+    "username": "danieljinwoopark+test@gmail.com",
+    "id": "4b8577c0-facc-11e7-b9a3-df4d09a3bea1",
+    "namespace": "",
+    "orgType": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "instanceUrl": "https://danpark-dev-ed.my.salesforce.com",
+    "workspace": "/Users/dan.park/Projects",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "StaticResource"
+    ]
+}
