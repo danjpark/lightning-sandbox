@@ -6,15 +6,7 @@
                             force:lightningQuickAction"
                 access="global" >
 
-
-    <div class="slds-page-header__title">
-    <div class="slds-page-header">
-    <div class="slds-align_absolute-center" style="height: 5rem;">
-    Registration Form for Students
-    </div>
-    </div>
-    </div>
-
+    <aura:attribute name="abc" type="Boolean" default="false" />
     <aura:attribute name="StudentsName" type="String" default="" />
     <aura:attribute name="ParentsName" type="String" default="" />
     <aura:attribute name="StandardorClass" type="String" default="" />
@@ -26,6 +18,18 @@
     <aura:attribute name="HaveYouTakenCourseBefore" type="Boolean" default="false" />
     <aura:attribute name="AreYouInterestedInOnlineCourse" type="Boolean" />
     <aura:attribute name="usersResponse1" type="String" default="" />
+
+
+
+    <div class="slds-page-header__title">
+    <div class="slds-page-header">
+    <div class="slds-align_absolute-center" style="height: 5rem;">
+        Registration Form for Students <br />
+        Value stored in the attribute abc is {!v.abc}
+    </div>
+    </div>
+    </div>
+
 
     <br /> <br />
     <div class="slds-size_5-of-8">
@@ -62,7 +66,7 @@
     </aura:if>
 
     <br />
-    <lightning:button label="Submit"></lightning:button>
+    <lightning:button label="Submit" onclick="{!c.doSubmit}"></lightning:button>
 
     </div>
 
