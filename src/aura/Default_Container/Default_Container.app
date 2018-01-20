@@ -4,7 +4,7 @@
 
 
 <div class="slds-align_absolute-center" style="height: 5rem;">
-This text is from the application level.
+This text is from the application level. 
 </div>
 
 
