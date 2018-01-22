@@ -16,8 +16,9 @@
                                                                  More than 7 hours" />
     <aura:attribute name="MobileNumber" type="Integer" default="" />
     <aura:attribute name="HaveYouTakenCourseBefore" type="Boolean" default="false" />
-    <aura:attribute name="AreYouInterestedInOnlineCourse" type="Boolean" />
+    <aura:attribute name="AreYouInterestedInOnlineCourse" type="Boolean" default="true"/>
     <aura:attribute name="usersResponse1" type="String" default="" />
+    <aura:attribute name="CheckBoxValue" type="Boolean" default="false" />
 
 
 
@@ -59,11 +60,16 @@
     <lightning:input label="Enter your Mobile Number" name="mobileNumber" type="telephone" value="{!v.MobileNumber}" />
 
     <br />
-    <lightning:input label="Are you available on weekends?" name="firstcheckbox" type="checkbox" value="{!v.AreYouInterestedInOnlineCourse}"/>
+    <lightning:input label="Are you available on weekends?"
+                     aura:id = "checkBox"
+                     name="firstcheckbox"
+                     type="checkbox"
+                     value="{!v.AreYouInterestedInOnlineCourse}"
+                     onchange="{!c.onClickCheckBox}"/>
 
-	<aura:if isTrue="{!v.AreYouInterestedInOnlineCourse}">
-    	Hello! You have checked this box.
-    </aura:if>
+	<aura:if isTrue="{!v.CheckBoxValue}">
+    	Hello! CheckBoxValue is True.
+  </aura:if>
 
     <br />
     <lightning:button label="Submit" onclick="{!c.doSubmit}"></lightning:button>

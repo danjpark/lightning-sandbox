@@ -12,5 +12,12 @@
 			alert("Value is false");
 			component.set("v.abc", true);
 		}
-	}
+	},
+
+  onClickCheckBox: function(component, event, helper){
+
+    //body of the function
+    // call function defined in helper
+    helper.OnClickCheckBoxHelper(component, event);
+  }
 })
