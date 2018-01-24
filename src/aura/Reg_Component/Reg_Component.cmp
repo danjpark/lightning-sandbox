@@ -68,7 +68,9 @@
                      onchange="{!c.onClickCheckBox}"/>
 
 	<aura:if isTrue="{!v.CheckBoxValue}">
-    	Hello! CheckBoxValue is True.
+    <br />
+      Hello! CheckBoxValue is True.
+    <br />
   </aura:if>
 
     <br />
