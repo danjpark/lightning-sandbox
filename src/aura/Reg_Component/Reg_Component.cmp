@@ -19,12 +19,14 @@
     <aura:attribute name="AreYouInterestedInOnlineCourse" type="Boolean" default="true"/>
     <aura:attribute name="usersResponse1" type="String" default="" />
     <aura:attribute name="CheckBoxValue" type="Boolean" default="false" />
+    <aura:attribute name="PageHeading" type="Strring" default="Registration Form for Students"/>
 
 
 
     <div class="slds-page-header__title">
     <div class="slds-page-header">
     <div class="slds-align_absolute-center" style="height: 5rem;">
+
         Registration Form for Students <br />
         Value stored in the attribute abc is {!v.abc}
     </div>
